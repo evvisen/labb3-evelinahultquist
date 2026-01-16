@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+  background: #f4f4f4;
+
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  margin-top: 2rem;
+}
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #333;
+  color: white;
+}
+
+.stat-card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+#stats-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.goal-card{
+  padding: 3rem;
+  margin: 2rem;
+}

@@ -1,0 +1,41 @@
+
+visa transaktioner:
+http://localhost:3000/transactions
+
+Sök på företag:
+http://localhost:3000/transactions/search?q=Willys
+
+
+Lägg till ny transaktion:
+http://localhost:3000/transactions
+
+JSON-data format transaktioner:
+{
+  "transactionUserId": 1,
+  "transactionCategoryId": 1,
+  "transactionAmount": 500,
+  "transactionDate": "2025-12-24",
+  "transactionCompanyName": "Ica Maxi"
+}
+
+ändra/radera transaktion:
+http://localhost:3000/transactions/1
+
+JSON-data:
+{
+  "transactionAmount": 750,
+  "transactionCategoryId": 4,
+  "transactionCompanyName": "Ica Supermarket"
+}
+
+
+JSON-data sparmål:
+{
+  "name": "Resa till Grekland",
+  "deadline": "2026-10-01",
+  "goalAmount": 25000,
+  "currentSaving": 10000,
+  "category": "Resor",
+  "milestones": ["Välja ö", "Boka hotell"],
+  "priority": true
+}

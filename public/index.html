@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Min Ekonomi-app</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Min Ekonomidashboard</h1>
+
+    <section id="stats-section">
+      <h2>Statistik per kategori</h2>
+      <div id="stats-container">Laddar statistik...</div>
+    </section>
+
+    <section id="transaction-section">
+      <h2>Mina Transaktioner</h2>
+
+      <input type="text" id="searchInput" placeholder="Sök företag..." />
+      <button onclick="searchTransactions()">Sök</button>
+      <button onclick="loadTransactions()">Visa alla</button>
+
+      <table id="transaction-table">
+        <thead>
+          <tr>
+            <th>Datum</th>
+            <th>Företag</th>
+            <th>Kategori</th>
+            <th>Belopp</th>
+          </tr>
+        </thead>
+        <tbody id="transaction-list"></tbody>
+      </table>
+    </section>
+    <h2>Mina sparmål</h2>
+
+    <div id="goals-container"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
