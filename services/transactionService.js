@@ -35,7 +35,8 @@ function createTransaction(data) {
 // 3. Sök transaktioner (VG-krav)
 function searchTransactions(searchTerm) {
   return new Promise((resolve, reject) => {
-    const sql = "SELECT * FROM Transaction WHERE transactionCompanyName LIKE ?";
+    const sql =
+      "SELECT * FROM Transaction t INNER JOIN Category c ON t.transactionCategoryId = c.categoryId WHERE transactionCompanyName LIKE ?";
     db.query(sql, [`%${searchTerm}%`], (err, rows) => {
       if (err) return reject(err);
       resolve(rows);
